@@ -1,1 +1,99 @@
-/* You can add global styles to this file, and also import other style files */
+@import './assets/sass/mixins.scss';
+@font-face {
+    font-family: "Material Icons";
+    font-style: normal;
+    font-weight: 400;
+    src: url("./assets/fonts/MaterialIcons-Regular.eot");
+    /* For IE6-8 */
+    src: local("Material Icons"), 
+         local("MaterialIcons-Regular"), 
+            url("./assets/fonts/MaterialIcons-Regular.woff2") format("woff2"), 
+            url("./assets/fonts/MaterialIcons-Regular.woff") format("woff"), 
+            url("./assets/fonts/MaterialIcons-Regular.ttf") format("truetype");
+  }
+
+  .material-icons {
+    font-family: 'Material Icons';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 1.5em;  /* Preferred icon size */
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    line-height: 1;
+    text-transform: none;
+    letter-spacing: normal;
+    word-wrap: normal;
+    white-space: nowrap;
+    direction: ltr;
+  
+    /* Support for all WebKit browsers. */
+    -webkit-font-smoothing: antialiased;
+    /* Support for Safari and Chrome. */
+    text-rendering: optimizeLegibility;
+  
+    /* Support for Firefox. */
+    -moz-osx-font-smoothing: grayscale;
+  
+    /* Support for IE. */
+    font-feature-settings: 'liga';
+  }
+  .menu-container{
+    border: 1px solid gray;
+    width:20%;
+    
+      ul.watermelon-menu{
+        ul{
+          li{
+            a{
+              color:rgb(104, 104, 104);
+              width:100%;
+              span{
+                  vertical-align: middle;
+              }
+            }
+          }
+        }
+      }
+    
+    }
+// @font-face {
+//     font-family: "Font Awesome";
+//     font-style: normal;
+//     font-weight: 300;
+//     src: url("./assets/fonts/fa-solid-900.eot");
+//     /* IE9 Compat Modes */
+//     src: local("Font Awesome"), local("Font Awesome"), url("./assets/fonts/fa-solid-900.eot") format("embedded-opentype"), url("./assets/fonts/fa-solid-900.woff2") format("woff2"), url("./assets/fonts/fa-solid-900.woff") format("woff"), url("./assets/fonts/fa-solid-900.ttf") format("truetype"), url("./assets/fonts/fa-solid-900.svg#FontAwesome") format("svg");
+//     /* Legacy iOS */
+//   }
+
+//   .fa{
+//     font-family: "Font Awesome";
+//     font-weight: normal;
+//     font-style: normal;
+//     font-size: 1.5em;  /* Preferred icon size */
+//     display: inline-block;
+//     width: 1em;
+//     height: 1em;
+//     line-height: 1;
+//     text-transform: none;
+//     letter-spacing: normal;
+//     word-wrap: normal;
+//     white-space: nowrap;
+//     direction: ltr;
+  
+//     /* Support for all WebKit browsers. */
+//     -webkit-font-smoothing: antialiased;
+//     /* Support for Safari and Chrome. */
+//     text-rendering: optimizeLegibility;
+  
+//     /* Support for Firefox. */
+//     -moz-osx-font-smoothing: grayscale;
+  
+//     /* Support for IE. */
+//     font-feature-settings: 'liga';
+//   }
+
+
+
+  

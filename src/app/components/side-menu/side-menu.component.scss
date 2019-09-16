@@ -1,0 +1,110 @@
+@mixin transition($transition...) {
+  -moz-transition:    $transition;
+  -o-transition:      $transition;
+  -webkit-transition: $transition;
+  transition:         $transition;
+}
+.menu-item-link {
+    /* display:block; */
+    /*color:#fff;*/
+    text-decoration: none;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    -webkit-transition: all 0.2s ease;
+    -moz-transition: all 0.2s ease;
+    -o-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+    z-index: 0;
+  }
+  .menu-item-link-active{
+    color:rgb(87, 25, 87) !important;
+
+  }
+
+  .menu-item-active{
+    >a{
+      background-color:rgb(219, 219, 219);
+      i:last-child{
+        -webkit-transform: rotate(-180deg);
+        -moz-transform: rotate(-180deg);
+        -o-transform: rotate(-180deg);
+        -ms-transform: rotate(-180deg);
+        transform: rotate(-180deg);
+      }
+    }
+    
+    ul{
+      background-color: #fff;
+    }
+  }
+
+ 
+
+  ul{
+    list-style-type: none;
+  }
+  // .watermelon-menu{
+  //   ul{
+  //     li{
+  //       a{
+  //         color:rgb(104, 104, 104);
+  //         width:100%;
+  //         span{
+  //             vertical-align: middle;
+  //         }
+  //       }
+  //     }
+  //   }
+  // }
+
+  li{
+    // color:red;
+    line-height: 35px;
+   //  width: 100%;
+    overflow: hidden;
+    a{
+     // padding: 0.5em 2.5em 0.5em 1em;
+     display: block;
+     color:rgb(104, 104, 104);
+     width:100%;
+     @include transition(background-color .3s);
+     span{
+       vertical-align: middle;
+     }
+    }
+    i{
+     vertical-align: middle;
+     padding-right:10px;
+    }
+    i:last-child{
+      float: right;
+      vertical-align: middle;
+      margin-top: 0.3em;
+      -moz-transition: transform 0.3s;
+      -o-transition: transform 0.3s;
+      -webkit-transition: transform 0.3s;
+      transition: transform 0.3s;
+     //  font-size: 14pt;
+    }
+    ul{
+      //  padding:0px;
+       margin:0px;
+       list-style-type: none;
+       overflow: hidden;
+     }
+  }
+  li:hover{
+    background-color:rgb(219, 219, 219);
+  }
+  
+  
+  .watermelon-menu{
+    padding: 0px;
+    margin:0px;
+    width:268px;
+      
+    }
+  ul{
+    
+   }
